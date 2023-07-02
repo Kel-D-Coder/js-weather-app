@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Belanosima', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(purple, #AA336A);
+    color: #fff;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 20px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    margin-right: 16px;
+    font-size: 18px;
+    width: 80%;
+
+}
+
+.search button {
+    border: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 30px;
+}
+
+.weather {
+    display: none;
+}
+
+.weather-icon {
+    width: 40%;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 130px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.col {
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 80px;
+}
+
+span .humidity{
+    position: relative;
+    left: 20px;
+}
+
+span .wind{
+    position: relative;
+    left: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 300px;
+        height: 88vh;
+        margin-top: 75px;
+        margin-left: 50px;
+    };
+
+    .weather h1 {
+        font-size: 50px;
+    }
+
+    .weather h2 {
+        font-size: 25px;
+    }
+
+    .responsive-div {
+        margin-top: 50px;
+    }
+
+    .details {
+        display: block;
+        margin-left: 50px;
+    }
+
+    .details .col {
+        margin-top: 30px;
+    }
+}
