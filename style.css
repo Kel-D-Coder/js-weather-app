@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lunasima&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Belanosima', sans-serif;
+    font-family: 'Lunasima', sans-serif;
     box-sizing: border-box;
 }
 

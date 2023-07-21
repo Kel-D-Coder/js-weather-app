@@ -9,9 +9,6 @@ async function getWeather(cityName) {
 
     const response = await axios.get(`${apiUrl}${cityName}&appid=${apiKey}`)
     displayWeather(response.data)
-
-    console.log(response.data.weather[0].main)
-  
 }
 
 function displayWeather(info) {
